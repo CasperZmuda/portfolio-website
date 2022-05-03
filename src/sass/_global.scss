@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font: $font-m Helvetica;
+  color: $black;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1400px;
+
+  @media (min-width: 768px) {
+    padding: 0 2em;
+  }
+}
+
+p {
+  line-height: 150%;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
